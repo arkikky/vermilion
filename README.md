@@ -1,4 +1,4 @@
-# Vermilion VSCode Theme's
+## Vermilion VSCode Theme's
 
 ### 🎨 Custom VS Code Theme
 
@@ -29,6 +29,20 @@ This theme supports multiple languages and frameworks including JavaScript, Type
 8. Run `yarn build` to update the theme.  
 - Or run `yarn start` to automatically rebuild while making changes (no reload necessary).  
 9. Once you're happy, commit your changes and open a Pull Request.
+
+---
+
+## 🚢 Publish (internal)
+
+> **Note:** Publishing a new version of this theme is only meant for maintainers.
+
+This repo uses **Changesets** to automatically update the `CHANGELOG.md` file and publish a new version to the **VS Marketplace**.
+To publish:
+```bash
+yarn changeset
+yarn changeset version
+yarn release
+```
 
 ---
 
