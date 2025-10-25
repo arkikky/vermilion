@@ -1,5 +1,3 @@
-<img src="https://raw.githubusercontent.com/arkikky/arkikky/refs/heads/main/images/vermilion.png" alt="Vermilion Icons" width="65px" height="65px" />
-
 ## Vermilion Theme's
 
 A beautifully crafted custom Visual Studio Code theme optimized for readability, color balance, and developer focus.  
