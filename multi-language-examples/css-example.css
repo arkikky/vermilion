@@ -1,19 +1,181 @@
-body {
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, #1e1f29, #282a36);
-  color: #f8f8f2;
-  margin: 0;
-  padding: 20px;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* @base-styles */
+@layer base {
+  body {
+    @apply font-[Poppins] bg-gradient-to-br from-[#1e1f29] to-[#282a36] text-[#f8f8f2] m-0 p-5 transition-colors duration-300;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-semibold text-white tracking-wide;
+  }
+
+  p {
+    @apply text-gray-300 leading-relaxed;
+  }
 }
 
-.card {
-  background: #44475a;
-  border-radius: 12px;
-  padding: 20px;
-  width: 250px;
-  transition: transform 0.3s ease;
+/* @custom-scrollbar */
+@layer utilities {
+  ::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#6272a4] rounded-full hover:bg-[#8be9fd];
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-[#1e1f29];
+  }
 }
 
-.card:hover {
-  transform: scale(1.05);
+/* @card-component */
+@layer components {
+  .card {
+    @apply bg-[#44475a] rounded-xl p-5 w-64 shadow-lg transform transition-all duration-300 hover:scale-105;
+  }
+
+  .card-header {
+    @apply text-xl font-semibold mb-2 text-[#ff79c6];
+  }
+
+  .card-body {
+    @apply text-gray-300 text-sm mb-4;
+  }
+
+  .card-footer {
+    @apply flex justify-end;
+  }
+}
+
+/* @button-styles */
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-300 focus:outline-none active:scale-95;
+  }
+
+  .btn-primary {
+    @apply bg-[#50fa7b] text-gray-900 hover:bg-[#40e070];
+  }
+
+  .btn-secondary {
+    @apply bg-[#6272a4] text-white hover:bg-[#7082b9];
+  }
+
+  .btn-danger {
+    @apply bg-[#ff5555] text-white hover:bg-[#ff6b6b];
+  }
+}
+
+/* @card-variants */
+@layer components {
+  .card-info {
+    @apply border-l-4 border-[#8be9fd];
+  }
+
+  .card-success {
+    @apply border-l-4 border-[#50fa7b];
+  }
+
+  .card-warning {
+    @apply border-l-4 border-[#f1fa8c];
+  }
+
+  .card-error {
+    @apply border-l-4 border-[#ff5555];
+  }
+}
+
+/* @text-effects */
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px #ff79c6, 0 0 20px #bd93f9;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-[#ff79c6] to-[#bd93f9] bg-clip-text text-transparent;
+  }
+}
+
+/* @hover-animations */
+@layer utilities {
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1 hover:scale-105;
+  }
+
+  .hover-glow {
+    box-shadow: 0 0 15px rgba(255, 121, 198, 0.3);
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 25px rgba(255, 121, 198, 0.6);
+  }
+}
+
+/* @animation-keyframes */
+@keyframes pulse-glow {
+  0%, 100% {
+    text-shadow: 0 0 10px #ff79c6, 0 0 20px #bd93f9;
+  }
+  50% {
+    text-shadow: 0 0 15px #ff79c6, 0 0 30px #bd93f9;
+  }
+}
+
+/* @animated-class */
+@layer utilities {
+  .animate-glow {
+    animation: pulse-glow 2s infinite ease-in-out;
+  }
+}
+
+/* @dark-mode-toggle */
+@layer utilities {
+  .dark-mode {
+    @apply bg-[#1e1f29] text-[#f8f8f2];
+  }
+
+  .light-mode {
+    @apply bg-gray-100 text-gray-900;
+  }
+}
+
+/* @utility-gradients */
+@layer utilities {
+  .bg-vermilion {
+    @apply bg-gradient-to-br from-[#ff005c] to-[#ff79c6];
+  }
+
+  .border-vermilion {
+    @apply border-[#ff005c];
+  }
+}
+
+/* @interactive-card */
+@layer components {
+  .card-interactive {
+    @apply relative overflow-hidden bg-[#44475a] rounded-xl p-5 transition-transform duration-500 hover:scale-105;
+  }
+
+  .card-interactive::after {
+    content: "";
+    @apply absolute inset-0 bg-gradient-to-r from-transparent to-[#ff79c620] opacity-0 transition-opacity duration-300;
+  }
+
+  .card-interactive:hover::after {
+    @apply opacity-100;
+  }
+}
+
+/* @footer-style */
+@layer components {
+  footer {
+    @apply text-center text-xs text-gray-500 mt-8;
+  }
 }
