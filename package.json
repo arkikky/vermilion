@@ -1,8 +1,8 @@
 {
   "name": "vermilion",
-  "displayName": "Vermilion Theme",
-  "description": "A rich vermilion theme for VS Code with smooth contrast and minimal UI.",
-  "version": "2.25.0",
+  "displayName": "Vermilion Theme's",
+  "description": "A beautifully crafted dark theme inspired by deep red tones (#CF0C4D) with elegant contrasts and focus-driven design.",
+  "version": "1.25.0",
   "publisher": "arkikky",
   "engines": {
     "vscode": "^2.15.0"
@@ -19,6 +19,7 @@
       }
     ]
   },
+  "icon": "images/vermilion.png",
   "scripts": {
     "build": "echo 'No build step needed'",
     "release": "vsce publish"

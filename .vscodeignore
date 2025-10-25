@@ -1,0 +1,11 @@
+# @ignore node modules and dependencies
+node_modules
+.vscode
+.git
+.gitignore
+.yarn*
+yarn.lock
+package-lock.json
+
+# @ignore build/config files
+multi-language-examples
