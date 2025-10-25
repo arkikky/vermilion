@@ -1,142 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vermilion Tailwind Example</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center transition-colors duration-500" id="app">
-  <!-- @main-container -->
-  <div class="max-w-sm mx-auto p-6 bg-gray-800 rounded-xl shadow-xl text-white w-full transition-all duration-300" id="card">
-    <!-- @title-section -->
-    <h1 class="text-3xl font-bold mb-3 text-center">Welcome to Vermilion</h1>
-    <p class="text-gray-400 mb-4 text-center">A TailwindCSS interactive example with JS functionality.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vermilion Tailwind Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center transition-colors duration-500"
+    id="app"
+  >
+    <!-- @main-container -->
+    <div
+      class="max-w-sm mx-auto p-6 bg-gray-800 rounded-xl shadow-xl text-white w-full transition-all duration-300"
+      id="card"
+    >
+      <!-- @title-section -->
+      <h1 class="text-3xl font-bold mb-3 text-center">Welcome to Vermilion</h1>
+      <p class="text-gray-400 mb-4 text-center">
+        A TailwindCSS interactive example with JS functionality.
+      </p>
 
-    <!-- @counter-display -->
-    <div class="text-center mb-4">
-      <span class="text-5xl font-semibold" id="count">0</span>
-      <p class="text-gray-400 text-sm">click count</p>
-    </div>
+      <!-- @counter-display -->
+      <div class="text-center mb-4">
+        <span class="text-5xl font-semibold" id="count">0</span>
+        <p class="text-gray-400 text-sm">click count</p>
+      </div>
 
-    <!-- @buttons-container -->
-    <div class="flex justify-center gap-3 mb-6">
-      <button id="increment" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg">+ Add</button>
-      <button id="decrement" class="px-4 py-2 bg-red-600 hover:bg-red-700 rounded-lg">- Subtract</button>
-    </div>
+      <!-- @buttons-container -->
+      <div class="flex justify-center gap-3 mb-6">
+        <button
+          id="increment"
+          class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg"
+        >
+          + Add
+        </button>
+        <button
+          id="decrement"
+          class="px-4 py-2 bg-red-600 hover:bg-red-700 rounded-lg"
+        >
+          - Subtract
+        </button>
+      </div>
 
-    <!-- @alert-button -->
-    <button id="alertBtn" class="w-full px-4 py-2 bg-green-600 hover:bg-green-700 rounded-lg mb-4">
-      Show Greeting
-    </button>
+      <!-- @alert-button -->
+      <button
+        id="alertBtn"
+        class="w-full px-4 py-2 bg-green-600 hover:bg-green-700 rounded-lg mb-4"
+      >
+        Show Greeting
+      </button>
 
-    <!-- @theme-toggle-button -->
-    <button id="themeToggle" class="w-full px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold rounded-lg">
-      Toggle Theme
-    </button>
+      <!-- @theme-toggle-button -->
+      <button
+        id="themeToggle"
+        class="w-full px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold rounded-lg"
+      >
+        Toggle Theme
+      </button>
 
-    <!-- @dynamic-list -->
-    <div class="mt-6">
-      <h2 class="text-lg font-bold mb-2">Dynamic List</h2>
-      <ul id="list" class="space-y-2 text-gray-300"></ul>
-      <div class="flex mt-3 gap-2">
-        <input
-          type="text"
-          id="inputItem"
-          placeholder="Type item..."
-          class="flex-1 px-3 py-2 bg-gray-700 rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
-        />
-        <button id="addItem" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg">Add</button>
+      <!-- @dynamic-list -->
+      <div class="mt-6">
+        <h2 class="text-lg font-bold mb-2">Dynamic List</h2>
+        <ul id="list" class="space-y-2 text-gray-300"></ul>
+        <div class="flex mt-3 gap-2">
+          <input
+            type="text"
+            id="inputItem"
+            placeholder="Type item..."
+            class="flex-1 px-3 py-2 bg-gray-700 rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button
+            id="addItem"
+            class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg"
+          >
+            Add
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script>
-    // @initialize-counter
-    let count = 0;
-    const countDisplay = document.getElementById("count");
+    <script>
+      // @initialize-counter
+      let count = 0;
+      const countDisplay = document.getElementById("count");
 
-    // @button-elements
-    const incrementBtn = document.getElementById("increment");
-    const decrementBtn = document.getElementById("decrement");
-    const alertBtn = document.getElementById("alertBtn");
-    const themeToggle = document.getElementById("themeToggle");
+      // @button-elements
+      const incrementBtn = document.getElementById("increment");
+      const decrementBtn = document.getElementById("decrement");
+      const alertBtn = document.getElementById("alertBtn");
+      const themeToggle = document.getElementById("themeToggle");
 
-    // @list-elements
-    const listContainer = document.getElementById("list");
-    const addItemBtn = document.getElementById("addItem");
-    const inputItem = document.getElementById("inputItem");
+      // @list-elements
+      const listContainer = document.getElementById("list");
+      const addItemBtn = document.getElementById("addItem");
+      const inputItem = document.getElementById("inputItem");
 
-    // @increment-function
-    incrementBtn.addEventListener("click", () => {
-      count++;
-      countDisplay.textContent = count;
-      animateNumber();
-    });
-
-    // @decrement-function
-    decrementBtn.addEventListener("click", () => {
-      if (count > 0) {
-        count--;
+      // @increment-function
+      incrementBtn.addEventListener("click", () => {
+        count++;
         countDisplay.textContent = count;
         animateNumber();
+      });
+
+      // @decrement-function
+      decrementBtn.addEventListener("click", () => {
+        if (count > 0) {
+          count--;
+          countDisplay.textContent = count;
+          animateNumber();
+        }
+      });
+
+      // @animate-count-display
+      function animateNumber() {
+        countDisplay.classList.add("scale-125");
+        setTimeout(() => countDisplay.classList.remove("scale-125"), 150);
       }
-    });
 
-    // @animate-count-display
-    function animateNumber() {
-      countDisplay.classList.add("scale-125");
-      setTimeout(() => countDisplay.classList.remove("scale-125"), 150);
-    }
+      // @show-alert-message
+      alertBtn.addEventListener("click", () => {
+        alert(`👋 Hello Vermilion User! Current count is ${count}.`);
+      });
 
-    // @show-alert-message
-    alertBtn.addEventListener("click", () => {
-      alert(`👋 Hello Vermilion User! Current count is ${count}.`);
-    });
+      // @theme-toggle-dark-light
+      themeToggle.addEventListener("click", () => {
+        const app = document.getElementById("app");
+        const card = document.getElementById("card");
 
-    // @theme-toggle-dark-light
-    themeToggle.addEventListener("click", () => {
-      const app = document.getElementById("app");
-      const card = document.getElementById("card");
+        const isDark = app.classList.contains("bg-gray-900");
 
-      const isDark = app.classList.contains("bg-gray-900");
+        if (isDark) {
+          app.classList.replace("bg-gray-900", "bg-gray-100");
+          app.classList.replace("text-white", "text-black");
+          card.classList.replace("bg-gray-800", "bg-white");
+          themeToggle.textContent = "Switch to Dark";
+        } else {
+          app.classList.replace("bg-gray-100", "bg-gray-900");
+          app.classList.replace("text-black", "text-white");
+          card.classList.replace("bg-white", "bg-gray-800");
+          themeToggle.textContent = "Toggle Theme";
+        }
+      });
 
-      if (isDark) {
-        app.classList.replace("bg-gray-900", "bg-gray-100");
-        app.classList.replace("text-white", "text-black");
-        card.classList.replace("bg-gray-800", "bg-white");
-        themeToggle.textContent = "Switch to Dark";
-      } else {
-        app.classList.replace("bg-gray-100", "bg-gray-900");
-        app.classList.replace("text-black", "text-white");
-        card.classList.replace("bg-white", "bg-gray-800");
-        themeToggle.textContent = "Toggle Theme";
-      }
-    });
+      // @add-item-to-list
+      addItemBtn.addEventListener("click", () => {
+        const value = inputItem.value.trim();
+        if (value) {
+          const li = document.createElement("li");
+          li.textContent = value;
+          li.className =
+            "bg-gray-700 px-3 py-2 rounded-lg flex justify-between items-center";
 
-    // @add-item-to-list
-    addItemBtn.addEventListener("click", () => {
-      const value = inputItem.value.trim();
-      if (value) {
-        const li = document.createElement("li");
-        li.textContent = value;
-        li.className = "bg-gray-700 px-3 py-2 rounded-lg flex justify-between items-center";
-        
-        const del = document.createElement("button");
-        del.textContent = "✖";
-        del.className = "text-red-400 hover:text-red-600";
-        del.addEventListener("click", () => li.remove());
+          const del = document.createElement("button");
+          del.textContent = "✖";
+          del.className = "text-red-400 hover:text-red-600";
+          del.addEventListener("click", () => li.remove());
 
-        li.appendChild(del);
-        listContainer.appendChild(li);
-        inputItem.value = "";
-      }
-    });
+          li.appendChild(del);
+          listContainer.appendChild(li);
+          inputItem.value = "";
+        }
+      });
 
-    // @press-enter-to-add
-    inputItem.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") addItemBtn.click();
-    });
-  </script>
-</body>
+      // @press-enter-to-add
+      inputItem.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") addItemBtn.click();
+      });
+    </script>
+  </body>
 </html>
