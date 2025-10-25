@@ -2,7 +2,7 @@
   "name": "vermilion",
   "displayName": "Vermilion Theme's",
   "description": "A beautifully crafted dark theme inspired by deep red tones (#CF0C4D) with elegant contrasts and focus-driven design.",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "publisher": "arkikky",
   "engines": {
     "vscode": "^1.0.0"

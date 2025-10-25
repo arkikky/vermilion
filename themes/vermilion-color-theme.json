@@ -429,8 +429,8 @@
         "string.quoted.double",
         "string.quoted.single",
         "punctuation.definition.string",
-        "entity.other.keyframe-offset.percentage.css",
         "entity.other.attribute-name.class.css",
+        "entity.other.keyframe-offset.percentage.css",
         "entity.other.attribute-name.pseudo-element.css"
       ],
       "settings": {

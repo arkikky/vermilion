@@ -1,5 +1,11 @@
 # vermilion
 
+## 5.0.0
+
+### Major Changes
+
+- feat: change brand logo
+
 ## 4.0.0
 
 ### Major Changes
