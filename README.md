@@ -1,34 +1,38 @@
-## Vermilion VSCode Theme's
+<img src="https://raw.githubusercontent.com/arkikky/arkikky/refs/heads/main/images/vermilion.png" alt="Banner" width="65px" height="65px" />
+
+## Vermilion Theme's
 
 A beautifully crafted custom Visual Studio Code theme optimized for readability, color balance, and developer focus.  
 This theme supports multiple languages and frameworks including **JavaScript, TypeScript, Python, PHP, Go, Java, CSS, TailwindCSS, HTML, Next.js, and SQL.**
 
-- Elegant color palette for clean syntax highlighting.
-- Works great with dark and light UI.
-- Support for Next.js, React.js, JavaScript, TypeScript, PHP, Python, Go, Java, HTML, CSS, TailwindCSS, JSON and SQL.
+What makes it special:
+
 - **Elegant color palette** for clean syntax highlighting and consistent contrast.
-- **Works great with dark and light UI**, maintaining visual harmony across panels and status bars.
-- **Support for modern frameworks** — including Next.js, React.js, JavaScript, TypeScript, PHP, Python, Go, Java, HTML, CSS, TailwindCSS, JSON and SQL.
-- **Quality-of-life tweaks** such as smooth scrolling, bracket pair colorization, linked editing, and inlay hint adjustments for a seamless coding experience.
+- **Works great with dark and light UI**
+- **Support for modern frameworks**
 - **Performance & stability optimizations**, build directories, reduced motion, and disabled telemetry for privacy and lightweight operation.
-- **Refined terminal & UI configuration** to ensure clarity, responsive layout, and consistent color behavior throughout the interface.
 
 Enjoy a balance of beauty and performance designed to keep you focused on what truly matters your code.
+Enjoying vermilion theme? Support the project by starring it or becoming a sponsor!
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-❤️-pink)](https://github.com/sponsors/arkikky/card)
+
+<img src="https://raw.githubusercontent.com/arkikky/arkikky/refs/heads/main/gif/arkikky-pride.gif" height="50px" width="50px">
 
 ---
 
-## 🧑 Getting started
+## 🔥 Getting started
 
 You can install this theme through the Visual Studio Marketplace
 
 1. Open Extensions sidebar panel in VS Code. View → Extensions
-2. Search for HackTheBox
+2. Search for vermilion
 3. Click Install to install the theme
 4. Click Reload to reload your editor
-5. File > Preferences > Settings > Workbench > Color Theme > HackTheBox
-6. Optional: Use the recommended settings below for best experience
+5. File > Preferences > Settings > Workbench > Color Theme > vermilion
+6. 🌟 Enjoy and Rate five-stars.
 
-## Installation via command line
+### Installation via command line
 
 ```
 $ git clone https://github.com/silofy/hackthebox.git ~/.vscode/extensions/HackTheBox
@@ -36,34 +40,21 @@ $ cd ~/.vscode/extensions/HackTheBox
 $ npm install && npm run build
 ```
 
-## 🧑‍💻 Contribute
+## 🔥 Creating a Theme
 
-1. Clone and open this repo in VS Code.
-2. Run `yarn` to install the dependencies.
-3. Press `F5` to open a new window with your extension loaded.
-4. Open **Code > Preferences > Color Theme [⌘K ⌘T]** and pick the “GitHub ...” theme you want to test.
-   > Note: It seems this has to be done twice because the first time it switches back to the default light theme (possibly a bug).
-5. Make changes to the `/src/theme.js` file.
-6. **UI changes:**
+Here are some helpful links if you'd like to create your own theme:
 
-- For all outer UI elements (status bar, file navigation, etc.), check the [Theme Color Reference](https://code.visualstudio.com/api/references/theme-color).
+[Color Themes, VS Code docs](https://code.visualstudio.com/docs/getstarted/themes)
 
-7. **Syntax changes:**
+## ☎️ Contact Us
 
-- For code highlighting tweaks, inspect syntax scopes by invoking the command:
-  ```
-  Developer: Inspect Editor Tokens and Scopes
-  ```
-  from the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P` on Mac) in the Extension Development Host window.
+Let's have a chat about your survey needs and get you started.
 
-8. Run `yarn build` to update the theme.
-
-- Or run `yarn start` to automatically rebuild while making changes (no reload necessary).
-
-9. Once you're happy, commit your changes and open a Pull Request.
-
----
+- 🔗 Github : [arkikky](https://github.com/arkikky/)
+- 🔗 LinkedIn : [arkikky](https://www.linkedin.com/in/arkikky0/)
+- 📫 Email : [ikky.andreansyah@gmail.com](https://mailto:ikky.andreansyah@gmail.com)
+- 🌏 Website : [https://arkikkylinksme.vercel.app](https://arkikkylinksme.vercel.app/)
 
 ## 💖 License
 
-MIT © 2025 – Crafted with ❤️ by ArkIkky.
+[MIT](https://github.com/arkikky/vermilion?tab=MIT-1-ov-file) © 2025 – Crafted & Made with ❤️ by ArkIkky.
