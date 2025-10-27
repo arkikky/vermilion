@@ -2,7 +2,7 @@
   "name": "vermilion",
   "displayName": "Vermilion Theme's",
   "description": "A beautifully crafted dark theme inspired by deep red tones (#CF0C4D) with elegant contrasts and focus-driven design.",
-  "version": "6.4.0",
+  "version": "6.5.0",
   "publisher": "arkikky",
   "engines": {
     "vscode": "^1.0.0"
@@ -186,9 +186,16 @@
     }
   },
   "icon": "images/vermilion.png",
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
   "scripts": {
-    "build": "echo 'No build step needed'",
-    "release": "vsce publish"
+    "check": "yarn vsce ls",
+    "update": "yarn changeset",
+    "build-version": "yarn changeset version",
+    "build": "npx vsce package",
+    "release": "npx vsce publish"
   },
   "maintainers": [
     "ArkIkky <ikky.andreansyah@gmail.com>"
@@ -198,6 +205,8 @@
     "url": "git+https://github.com/arkikky/vermilion.git"
   },
   "keywords": [
+    "verimilion",
+    "verimilion-themes",
     "vscode",
     "developer-tools",
     "vscode-theme",

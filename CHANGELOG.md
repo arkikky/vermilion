@@ -1,5 +1,11 @@
 # vermilion
 
+## 6.5.0
+
+### Minor Changes
+
+- feat: support extension setup in package module
+
 ## 6.4.0
 
 ### Minor Changes
