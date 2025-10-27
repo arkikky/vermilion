@@ -1,5 +1,17 @@
 # vermilion
 
+## 6.0.1
+
+### Patch Changes
+
+- feat: remove setup unused
+
+## 6.0.0
+
+### Major Changes
+
+- feat: drag and drop nonactived set to false
+
 ## 5.0.0
 
 ### Major Changes

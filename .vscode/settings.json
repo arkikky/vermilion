@@ -77,7 +77,7 @@
   "workbench.editor.showTabs": "multiple", // @show-multiple-tabs
   "workbench.editor.editorActionsLocation": "hidden", // @hide-editor-actions
   "workbench.layoutControl.enabled": true, // @enable-layout-control
-  "explorer.confirmDelete": true, // @confirm-before-delete
+  "explorer.confirmDelete": false, // @confirm-before-delete
   "explorer.compactFolders": false, // @expand-folder-structure
   "explorer.enableDragAndDrop": false, // @disable-drag-drop
   "explorer.confirmPasteNative": true, // @confirm-native-paste
