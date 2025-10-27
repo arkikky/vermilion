@@ -35,8 +35,8 @@ You can install this theme through the Visual Studio Marketplace
 ### Installation via command line
 
 ```
-$ git clone https://github.com/silofy/hackthebox.git ~/.vscode/extensions/HackTheBox
-$ cd ~/.vscode/extensions/HackTheBox
+$ git clone https://github.com/arkikky/vermilion.git ~/.vscode/extensions/vermilion
+$ cd ~/.vscode/extensions/vermilion
 $ npm install && npm run build
 ```
 

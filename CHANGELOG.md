@@ -1,5 +1,35 @@
 # vermilion
 
+## 6.4.0
+
+### Minor Changes
+
+- fix: error setup in package module
+
+## 6.3.0
+
+### Minor Changes
+
+- fix: error setup in package module
+
+## 6.2.1
+
+### Patch Changes
+
+- fix: remove error setup in module package
+
+## 6.2.0
+
+### Minor Changes
+
+- feat: ui web setup and set maintainers
+
+## 6.1.0
+
+### Minor Changes
+
+- feat: copy installation via command line readme updated
+
 ## 6.0.1
 
 ### Patch Changes

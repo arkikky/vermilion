@@ -2,7 +2,7 @@
   "name": "vermilion",
   "displayName": "Vermilion Theme's",
   "description": "A beautifully crafted dark theme inspired by deep red tones (#CF0C4D) with elegant contrasts and focus-driven design.",
-  "version": "6.0.1",
+  "version": "6.4.0",
   "publisher": "arkikky",
   "engines": {
     "vscode": "^1.0.0"
@@ -190,6 +190,9 @@
     "build": "echo 'No build step needed'",
     "release": "vsce publish"
   },
+  "maintainers": [
+    "ArkIkky <ikky.andreansyah@gmail.com>"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arkikky/vermilion.git"
