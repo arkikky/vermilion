@@ -269,7 +269,7 @@
     "path-key": "^3.1.1",
     "path-type": "^4.0.0",
     "picocolors": "^1.1.1",
-    "picomatch": "^2.3.1",
+    "picomatch": "^2.3.2",
     "pify": "^4.0.1",
     "prettier": "^2.8.8",
     "quansync": "^0.2.11",
